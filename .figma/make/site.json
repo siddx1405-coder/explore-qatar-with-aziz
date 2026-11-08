@@ -1,0 +1,10 @@
+{
+  "description": "Collects customer details and creates a professional, visually polished website tailored to their needs.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

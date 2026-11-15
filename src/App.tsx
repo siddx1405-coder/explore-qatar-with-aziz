@@ -124,6 +124,13 @@ export default function App() {
             Plan my tour
           </a>
         </nav>
+        <div className="socials headerSocials" aria-label="Social media">
+          {socials.map(([label, url, Icon]) => (
+            <a key={label} href={url} target="_blank" rel="noreferrer" title={label} aria-label={label}>
+              <Icon />
+            </a>
+          ))}
+        </div>
         <button className="menu" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X /> : <Menu />}
         </button>
@@ -326,16 +333,6 @@ export default function App() {
             <span>
               <small>Based in</small>Doha, Qatar
             </span>
-          </div>
-          <div>
-            <small>Follow the journey</small>
-            <div className="socials">
-              {socials.map(([label, url, Icon]) => (
-                <a key={label} href={url} target="_blank" title={label} aria-label={label}>
-                  <Icon />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
         <div className="footBottom">
